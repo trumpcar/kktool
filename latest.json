@@ -1,14 +1,14 @@
 {
   "schema": 1,
   "repository": "trumpcar/kktool",
-  "tag_name": "v1.0.12",
-  "body": "坤坤助手 v1.0.12\n\n本次更新解决彻底关闭后仍可能有文件被占用、导致整个便携软件文件夹难以移动或删除的问题。\n\n更新内容：\n\n- 关闭窗口时明确区分【放入后台】与【彻底退出程序】；放入后台会继续显示标点，因此 EXE 和 _internal 仍会被占用。\n- 托盘改用可取消、可等待的守护工作线程；彻底退出时会通知托盘停止并等待线程回收，避免托盘线程残留。\n- 彻底退出会保存当前标点和设置、关闭日志文件句柄，再销毁主窗口并释放单实例锁。\n- 退出流程支持重复触发保护，避免关闭窗口和托盘退出同时发生时产生竞态。\n- 【设置 → 用户数据】新增【退出并定位软件文件夹】：会在资源管理器中选中软件目录并彻底退出，窗口和托盘消失后即可移动或删除整个文件夹。\n- 新增醒目说明：删除便携软件文件夹时，其中的“用户数据”也会一起删除；需要保留标点和设置时应先迁移或备份。\n- 保留 v1.0.11 的无 VPN 版本检查、国内 CDN 下载、断点续传和 SHA-256 强制校验。\n\n国内备用下载地址：https://gcore.jsdelivr.net/gh/trumpcar/kktool@6075bd44ad9f94e706c78e1db8b4c8a2c91cb64c/downloads/v1.0.12.zip\n国内备用下载地址：https://testingcf.jsdelivr.net/gh/trumpcar/kktool@6075bd44ad9f94e706c78e1db8b4c8a2c91cb64c/downloads/v1.0.12.zip\n国内备用下载地址：https://gh-proxy.com/https://github.com/trumpcar/kktool/releases/download/v1.0.12/v1.0.12.zip\n\nSHA-256: 42B4A5E7758B9E5AB9FD3D62254B0FD042784772625185D4CB8A6B7ACD031080",
-  "html_url": "https://github.com/trumpcar/kktool/releases/tag/v1.0.12",
+  "tag_name": "v1.0.13",
+  "body": "坤坤助手 v1.0.13\n\n本次更新重新实现‘修改显卡’功能，使修改位置与设备管理器设备实例路径的 DeviceDesc 方法一致，同时完整兼容旧版本留下的 DriverDesc 修改和恢复数据。\n\n更新内容：\n\n- 显卡名称修改位置改为 HKLM\\SYSTEM\\CurrentControlSet\\Enum\\<设备实例ID> 下的 DeviceDesc，不再使用显示驱动类中的 DriverDesc 作为新版修改位置。\n- 修改前保存完整的原始 DeviceDesc，包括 @oemXX.inf 资源前缀；恢复时原样写回并重新读取验证。\n- 只显示当前在线且具有设备实例路径的 NVIDIA 显卡，自动排除换卡后残留的 GT 1030 等离线历史设备。\n- 显卡列表、当前名称和注册表路径统一按照 DeviceDesc 显示，避免游戏识别名称与软件显示名称不一致。\n- 完整兼容旧版 gpu_name_backup.json；如果旧版曾修改 DriverDesc，新版执行恢复时会一并恢复旧值。\n- 备份缺失时会从当前安装的 NVIDIA 驱动 INF 安全识别真实型号；无法可靠判断时拒绝写入，避免恢复成错误型号。\n- GTX 750 Ti 与 GTX 1050 Ti 均支持修改、切换和恢复，修改及恢复完成后都会进行注册表回读验证。\n- 保留 v1.0.12 的彻底退出、文件占用清理、无 VPN 更新检测、国内 CDN、断点续传和 SHA-256 强制校验。\n\n国内备用下载地址：https://gcore.jsdelivr.net/gh/trumpcar/kktool@9a9b7de82bd826a1d9d9db23238b48c72d543565/downloads/v1.0.13.zip\n国内备用下载地址：https://testingcf.jsdelivr.net/gh/trumpcar/kktool@9a9b7de82bd826a1d9d9db23238b48c72d543565/downloads/v1.0.13.zip\n国内备用下载地址：https://gh-proxy.com/https://github.com/trumpcar/kktool/releases/download/v1.0.13/v1.0.13.zip\n\nSHA-256: 4EDAAFEB8C09CF8222C5D5E7FB8CA3BFA867CC1DFBC367A0FC1CBA280E0BEB6B",
+  "html_url": "https://github.com/trumpcar/kktool/releases/tag/v1.0.13",
   "assets": [
     {
-      "name": "v1.0.12.zip",
-      "browser_download_url": "https://github.com/trumpcar/kktool/releases/download/v1.0.12/v1.0.12.zip",
-      "size": 16620945
+      "name": "v1.0.13.zip",
+      "browser_download_url": "https://github.com/trumpcar/kktool/releases/download/v1.0.13/v1.0.13.zip",
+      "size": 16625044
     }
   ]
 }

@@ -1,14 +1,14 @@
 {
   "schema": 1,
   "repository": "trumpcar/kktool",
-  "tag_name": "v1.0.11",
-  "body": "坤坤助手 v1.0.11\n\n本次更新继续改善中国大陆无 VPN 环境下的版本检查和更新下载体验，并修复 v1.0.10 备用清单可能被 CDN 分支缓存延迟的问题。\n\n更新内容：\n\n- 版本检查优先使用 GitHub 官方接口；官方接口不可达、超时或受限时，自动切换到国内可访问的 raw 代理清单线路。\n- raw 清单请求使用五分钟缓存键，避免刚发布的新版本被旧清单长时间遮住；jsDelivr 继续作为末级查询兜底。\n- 设置页会显示版本信息来自 GitHub 官方接口还是国内备用线路，方便判断实际网络路径。\n- 下载优先尝试 GitHub 官方源；失败或持续过慢时，依次切换 Gcore、TestingCF 和 gh-proxy，并保留断点续传进度。\n- 国内清单严格校验仓库、版本号、压缩包名称和官方 GitHub Release 地址，不能把更新指向其他仓库或网站。\n- 所有下载源完成后都必须匹配本说明中的 SHA-256 才能安装。\n\n说明：v1.0.10 会把 v1.0.11 识别为新版本；更早版本若无法访问 GitHub API，可先手动下载本版本，之后即可使用新的无 VPN 查询链路。\n\n国内备用下载地址：https://gcore.jsdelivr.net/gh/trumpcar/kktool@938c3ee56ddb5036cbb5343d290f5b7f6d41122b/downloads/v1.0.11.zip\n国内备用下载地址：https://testingcf.jsdelivr.net/gh/trumpcar/kktool@938c3ee56ddb5036cbb5343d290f5b7f6d41122b/downloads/v1.0.11.zip\n国内备用下载地址：https://gh-proxy.com/https://github.com/trumpcar/kktool/releases/download/v1.0.11/v1.0.11.zip\n\nSHA-256: 12CF1E6717C992A4D0E3DC6409B51421FC7D5732DF1074EDC1139D561D665E9C",
-  "html_url": "https://github.com/trumpcar/kktool/releases/tag/v1.0.11",
+  "tag_name": "v1.0.12",
+  "body": "坤坤助手 v1.0.12\n\n本次更新解决彻底关闭后仍可能有文件被占用、导致整个便携软件文件夹难以移动或删除的问题。\n\n更新内容：\n\n- 关闭窗口时明确区分【放入后台】与【彻底退出程序】；放入后台会继续显示标点，因此 EXE 和 _internal 仍会被占用。\n- 托盘改用可取消、可等待的守护工作线程；彻底退出时会通知托盘停止并等待线程回收，避免托盘线程残留。\n- 彻底退出会保存当前标点和设置、关闭日志文件句柄，再销毁主窗口并释放单实例锁。\n- 退出流程支持重复触发保护，避免关闭窗口和托盘退出同时发生时产生竞态。\n- 【设置 → 用户数据】新增【退出并定位软件文件夹】：会在资源管理器中选中软件目录并彻底退出，窗口和托盘消失后即可移动或删除整个文件夹。\n- 新增醒目说明：删除便携软件文件夹时，其中的“用户数据”也会一起删除；需要保留标点和设置时应先迁移或备份。\n- 保留 v1.0.11 的无 VPN 版本检查、国内 CDN 下载、断点续传和 SHA-256 强制校验。\n\n国内备用下载地址：https://gcore.jsdelivr.net/gh/trumpcar/kktool@6075bd44ad9f94e706c78e1db8b4c8a2c91cb64c/downloads/v1.0.12.zip\n国内备用下载地址：https://testingcf.jsdelivr.net/gh/trumpcar/kktool@6075bd44ad9f94e706c78e1db8b4c8a2c91cb64c/downloads/v1.0.12.zip\n国内备用下载地址：https://gh-proxy.com/https://github.com/trumpcar/kktool/releases/download/v1.0.12/v1.0.12.zip\n\nSHA-256: 42B4A5E7758B9E5AB9FD3D62254B0FD042784772625185D4CB8A6B7ACD031080",
+  "html_url": "https://github.com/trumpcar/kktool/releases/tag/v1.0.12",
   "assets": [
     {
-      "name": "v1.0.11.zip",
-      "browser_download_url": "https://github.com/trumpcar/kktool/releases/download/v1.0.11/v1.0.11.zip",
-      "size": 16310371
+      "name": "v1.0.12.zip",
+      "browser_download_url": "https://github.com/trumpcar/kktool/releases/download/v1.0.12/v1.0.12.zip",
+      "size": 16620945
     }
   ]
 }

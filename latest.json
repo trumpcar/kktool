@@ -1,14 +1,14 @@
 {
   "schema": 1,
   "repository": "trumpcar/kktool",
-  "tag_name": "v1.0.13",
-  "body": "坤坤助手 v1.0.13\n\n本次更新重新实现‘修改显卡’功能，使修改位置与设备管理器设备实例路径的 DeviceDesc 方法一致，同时完整兼容旧版本留下的 DriverDesc 修改和恢复数据。\n\n更新内容：\n\n- 显卡名称修改位置改为 HKLM\\SYSTEM\\CurrentControlSet\\Enum\\<设备实例ID> 下的 DeviceDesc，不再使用显示驱动类中的 DriverDesc 作为新版修改位置。\n- 修改前保存完整的原始 DeviceDesc，包括 @oemXX.inf 资源前缀；恢复时原样写回并重新读取验证。\n- 只显示当前在线且具有设备实例路径的 NVIDIA 显卡，自动排除换卡后残留的 GT 1030 等离线历史设备。\n- 显卡列表、当前名称和注册表路径统一按照 DeviceDesc 显示，避免游戏识别名称与软件显示名称不一致。\n- 完整兼容旧版 gpu_name_backup.json；如果旧版曾修改 DriverDesc，新版执行恢复时会一并恢复旧值。\n- 备份缺失时会从当前安装的 NVIDIA 驱动 INF 安全识别真实型号；无法可靠判断时拒绝写入，避免恢复成错误型号。\n- GTX 750 Ti 与 GTX 1050 Ti 均支持修改、切换和恢复，修改及恢复完成后都会进行注册表回读验证。\n- 保留 v1.0.12 的彻底退出、文件占用清理、无 VPN 更新检测、国内 CDN、断点续传和 SHA-256 强制校验。\n\n国内备用下载地址：https://gcore.jsdelivr.net/gh/trumpcar/kktool@9a9b7de82bd826a1d9d9db23238b48c72d543565/downloads/v1.0.13.zip\n国内备用下载地址：https://testingcf.jsdelivr.net/gh/trumpcar/kktool@9a9b7de82bd826a1d9d9db23238b48c72d543565/downloads/v1.0.13.zip\n国内备用下载地址：https://gh-proxy.com/https://github.com/trumpcar/kktool/releases/download/v1.0.13/v1.0.13.zip\n\nSHA-256: 4EDAAFEB8C09CF8222C5D5E7FB8CA3BFA867CC1DFBC367A0FC1CBA280E0BEB6B",
-  "html_url": "https://github.com/trumpcar/kktool/releases/tag/v1.0.13",
+  "tag_name": "v1.1.1",
+  "body": "坤坤助手 v1.1.1\n\n本次更新新增可调倒计时悬浮窗，并包含此前尚未发布的声音样本采集与精细标注功能。\n\n更新内容：\n\n- 新增独立“倒计时”标签页，可在 5:00 和 5:30 两个预设之间选择。\n- 支持启动、暂停、复位，以及在面板中直接增减 1 秒。\n- 倒计时可置顶悬浮显示，支持拖动位置、调整字体大小和文字颜色。\n- 固定倒计时位置后，鼠标悬停数字仍可使用滚轮：向上每格增加 1 秒，向下每格减少 1 秒。\n- 运行中滚轮调时不会暂停；倒计时始终依据单调时钟继续扣除真实经过时间。\n- 倒计时预设、位置、样式、显示和固定状态随用户配置保存；当前剩余时间与运行状态不会跨重启保存。\n- 新增 WASAPI 回环声音采集，按 Ctrl+Alt+F8 保存按键前约 4 秒和后约 2 秒的本机输出声音。\n- 新增音频波形试听与时间段精标，并可记录距离、枪声、玩家语音、爆炸及室内外等混杂信息。\n- 支持定时抽取候选背景；必须试听确认后才会成为负样本，声音与标注默认完全离线保存在用户数据目录。\n- 保留显卡名称安全修改与恢复、每日密码、无 VPN 更新检测、国内 CDN、断点续传和 SHA-256 强制校验。\n\n国内备用下载地址：https://gcore.jsdelivr.net/gh/trumpcar/kktool@6c05d3a1b26fe262b0b78ed6995c33992a3b218c/downloads/v1.1.1.zip\n国内备用下载地址：https://testingcf.jsdelivr.net/gh/trumpcar/kktool@6c05d3a1b26fe262b0b78ed6995c33992a3b218c/downloads/v1.1.1.zip\n国内备用下载地址：https://gh-proxy.com/https://github.com/trumpcar/kktool/releases/download/v1.1.1/v1.1.1.zip\n\nSHA-256: 529E29C8927D7238EFA341E193CD9D6E51B4EBFCABD17BE84DFB56E213000F63",
+  "html_url": "https://github.com/trumpcar/kktool/releases/tag/v1.1.1",
   "assets": [
     {
-      "name": "v1.0.13.zip",
-      "browser_download_url": "https://github.com/trumpcar/kktool/releases/download/v1.0.13/v1.0.13.zip",
-      "size": 16625044
+      "name": "v1.1.1.zip",
+      "browser_download_url": "https://github.com/trumpcar/kktool/releases/download/v1.1.1/v1.1.1.zip",
+      "size": 14556416
     }
   ]
 }

@@ -1,14 +1,14 @@
 {
   "schema": 1,
   "repository": "trumpcar/kktool",
-  "tag_name": "v1.1.1",
-  "body": "坤坤助手 v1.1.1\n\n本次更新新增可调倒计时悬浮窗，并包含此前尚未发布的声音样本采集与精细标注功能。\n\n更新内容：\n\n- 新增独立“倒计时”标签页，可在 5:00 和 5:30 两个预设之间选择。\n- 支持启动、暂停、复位，以及在面板中直接增减 1 秒。\n- 倒计时可置顶悬浮显示，支持拖动位置、调整字体大小和文字颜色。\n- 固定倒计时位置后，鼠标悬停数字仍可使用滚轮：向上每格增加 1 秒，向下每格减少 1 秒。\n- 运行中滚轮调时不会暂停；倒计时始终依据单调时钟继续扣除真实经过时间。\n- 倒计时预设、位置、样式、显示和固定状态随用户配置保存；当前剩余时间与运行状态不会跨重启保存。\n- 新增 WASAPI 回环声音采集，按 Ctrl+Alt+F8 保存按键前约 4 秒和后约 2 秒的本机输出声音。\n- 新增音频波形试听与时间段精标，并可记录距离、枪声、玩家语音、爆炸及室内外等混杂信息。\n- 支持定时抽取候选背景；必须试听确认后才会成为负样本，声音与标注默认完全离线保存在用户数据目录。\n- 保留显卡名称安全修改与恢复、每日密码、无 VPN 更新检测、国内 CDN、断点续传和 SHA-256 强制校验。\n\n国内备用下载地址：https://gcore.jsdelivr.net/gh/trumpcar/kktool@6c05d3a1b26fe262b0b78ed6995c33992a3b218c/downloads/v1.1.1.zip\n国内备用下载地址：https://testingcf.jsdelivr.net/gh/trumpcar/kktool@6c05d3a1b26fe262b0b78ed6995c33992a3b218c/downloads/v1.1.1.zip\n国内备用下载地址：https://gh-proxy.com/https://github.com/trumpcar/kktool/releases/download/v1.1.1/v1.1.1.zip\n\nSHA-256: 529E29C8927D7238EFA341E193CD9D6E51B4EBFCABD17BE84DFB56E213000F63",
-  "html_url": "https://github.com/trumpcar/kktool/releases/tag/v1.1.1",
+  "tag_name": "v1.1.2",
+  "body": "坤坤助手 v1.1.2\n\n本次更新加入与游戏时间校准的北京时间联动倒计时，优化悬浮数字调节与显示，并移除声音样本采集功能。\n\n更新内容：\n\n- 保留“航天直升机撤离 5:00”普通倒计时，移除 5:30 预设。\n- 新增默认 30:00 的游戏校准计时，可在面板数字或校准悬浮数字上滚轮调节，使其与游戏剩余时间一致。\n- 鼠标位于冒号左侧分钟区域时，每格调整 1 分钟；位于右侧秒钟区域时，每格调整 1 秒；运行中调整不会暂停计时。\n- 新增“飞升按电脑时刻”输入。完成校准后记录目标对应的北京时间，并自动显示 4:30 结果倒计时。\n- 目标尚未到达时结果保持 04:30；到达对应北京时间后自动扣减。若校准时目标已经过去 8 秒，则直接显示 04:22。\n- 完成校准后只隐藏校准悬浮窗，后台游戏校准计时继续运行，不会因为显示结果而停表。\n- 校准和结果悬浮窗可分别显示或隐藏，并支持字体大小、文字颜色和 30%–100% 透明度。\n- 修复固定或解锁悬浮倒计时时数字发生偏移的问题；现在以数字中心为锚点保持原位置。\n- 保存倒计时显示设置、飞升按电脑时刻和北京时间触发点，程序短暂卡顿、最小化或重新启动后会追上正确结果时间。\n- 移除声音样本标签页、采集初始化及 PyAudioWPatch、PyAudio、PortAudio 打包依赖；旧版本已经保存的音频文件不会被自动删除。\n- 保留显卡名称安全修改与恢复、每日密码、无 VPN 更新检测、国内 CDN、断点续传和 SHA-256 强制校验。\n\n国内备用下载地址：https://gcore.jsdelivr.net/gh/trumpcar/kktool@762dd14805e8b4da5d5ad3e2462e85bdef9beed0/downloads/v1.1.2.zip\n国内备用下载地址：https://testingcf.jsdelivr.net/gh/trumpcar/kktool@762dd14805e8b4da5d5ad3e2462e85bdef9beed0/downloads/v1.1.2.zip\n国内备用下载地址：https://gh-proxy.com/https://github.com/trumpcar/kktool/releases/download/v1.1.2/v1.1.2.zip\n\nSHA-256: 08156563E193217FCC3B027259A059FA447A565D60C203E2E577C7E1FD9C6968",
+  "html_url": "https://github.com/trumpcar/kktool/releases/tag/v1.1.2",
   "assets": [
     {
-      "name": "v1.1.1.zip",
-      "browser_download_url": "https://github.com/trumpcar/kktool/releases/download/v1.1.1/v1.1.1.zip",
-      "size": 14556416
+      "name": "v1.1.2.zip",
+      "browser_download_url": "https://github.com/trumpcar/kktool/releases/download/v1.1.2/v1.1.2.zip",
+      "size": 14433023
     }
   ]
 }

@@ -1,14 +1,14 @@
 {
   "schema": 1,
   "repository": "trumpcar/kktool",
-  "tag_name": "v2.0.1",
-  "body": "坤坤助手 v2.0.1\n\n本次更新以软件安装、升级和界面整理为主，并加入飞升按电脑声音识别功能。\n\n软件改动：\n- 改为正式安装版结构，程序组件、用户数据和卸载程序相互分离。\n- 支持后续版本下载安装程序原地升级，升级整体替换 app，不覆盖用户数据。\n- 正式下载前并行小流量测试 GitHub 官方源和可用备用线路，优先选择当前最快线路；保留断点续传、线路切换和 SHA-256 强制校验。\n- FOV 竖直角度新用户默认 24°，增加 88 米瞬爆提示。\n- 新标点默认大小 10，新用户首次启动标点列表为空。\n- 倒计时共用悬浮设置移动到飞升按电脑识别区域下方。\n\n飞升按电脑识别：\n- 选择游戏程序后，只读取该程序及子进程声音，在本机离线识别，不上传或保存录音。\n- 6 秒内确认两次目标声音后，以第一次声音时刻为基准启动 5:30 倒计时，并自动停止监听。\n- 第二次确认产生的等待时间会从倒计时中扣除。\n\n1.1.2 用户需要手动运行一次 2.0.1 安装程序；以后可使用新的安装器更新方式。\n\n国内备用下载地址：https://gh-proxy.com/https://github.com/trumpcar/kktool/releases/download/v2.0.1/KunKunHelper_Setup.exe\n国内备用下载地址：https://ghfast.top/https://github.com/trumpcar/kktool/releases/download/v2.0.1/KunKunHelper_Setup.exe\n国内备用下载地址：https://ghproxy.net/https://github.com/trumpcar/kktool/releases/download/v2.0.1/KunKunHelper_Setup.exe\n\nSHA-256: 16D5CF3976565541A2095050080439FA4AA7D9DCA08A5DEDFAC544E2424F2ECC",
-  "html_url": "https://github.com/trumpcar/kktool/releases/tag/v2.0.1",
+  "tag_name": "v2.0.2",
+  "body": "坤坤助手 v2.0.2\n\n本次更新重点优化两种倒计时的独立使用体验，并重新整理“关于”和更新界面。\n\n倒计时：\n- 航天直升机撤离 5:00 与飞升按电脑识别使用两个完全独立的悬浮窗。\n- 两套悬浮窗的位置、字体大小、颜色、透明度和固定状态分别保存，设置直接放在各自功能区域内。\n- 航天直升机按钮第一次点击启动，第二次点击收回并停止，可重复循环。\n- 飞升“预览并放置倒计时”第一次点击显示，第二次点击收回，可重复预设位置。\n- 飞升声音确认后，5:30 倒计时会固定显示在预览位置；归零后自动收回。\n- 飞升识别仍以第一次声音的北京时间为基准扣除二次确认延迟，并在确认后自动停止监听。\n\n关于与反馈：\n- 版本更新与“关于”合并；更新记录默认折叠，点击后单独查看。\n- 作者、GitHub 仓库、交流与反馈、使用教程改为整张卡片点击，不再显示多余按钮。\n- 软件意见反馈与组队炸撤合并为“交流与反馈”。\n- 加入炸撤交流群 1101082104 时，可直接唤起桌面 QQ、复制群号、使用腾讯官方备用链接或扫描二维码。\n\n升级说明：\n- 2.0.1 安装版可直接更新到 2.0.2；升级整体替换 app，不覆盖安装目录下的“用户数据”。\n- 继续保留下载线路预测速、断点续传、线路切换和 SHA-256 强制校验。\n- 当前安装程序尚未数字签名，Windows SmartScreen 可能显示提示。\n\n国内备用下载地址：https://gh-proxy.com/https://github.com/trumpcar/kktool/releases/download/v2.0.2/KunKunHelper_Setup.exe\n国内备用下载地址：https://ghfast.top/https://github.com/trumpcar/kktool/releases/download/v2.0.2/KunKunHelper_Setup.exe\n国内备用下载地址：https://ghproxy.net/https://github.com/trumpcar/kktool/releases/download/v2.0.2/KunKunHelper_Setup.exe\n\nSHA-256: CECC447EB64F98F7C5849E080F230709778DEFC244127D0D8FF19E050750A99A",
+  "html_url": "https://github.com/trumpcar/kktool/releases/tag/v2.0.2",
   "assets": [
     {
       "name": "KunKunHelper_Setup.exe",
-      "browser_download_url": "https://github.com/trumpcar/kktool/releases/download/v2.0.1/KunKunHelper_Setup.exe",
-      "size": 24358403
+      "browser_download_url": "https://github.com/trumpcar/kktool/releases/download/v2.0.2/KunKunHelper_Setup.exe",
+      "size": 24815379
     }
   ]
 }

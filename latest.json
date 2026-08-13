@@ -1,14 +1,14 @@
 {
   "schema": 1,
   "repository": "trumpcar/kktool",
-  "tag_name": "v2.0.3",
-  "body": "坤坤助手 v2.0.3\n\n权限调整：\n- 主程序、倒计时和音频识别以普通用户权限运行；仅修改或恢复 NVIDIA 显卡名称时请求管理员权限。\n- 音频识别通过 Windows 进程回环接口严格监听所选 PID 及其子进程，不通过 OpenProcess 打开目标游戏进程。\n\n更新修复：\n- 修正 Nuitka 正式包被误判为源码运行模式的问题。\n- 更新缓存改存到当前‘用户数据\\更新缓存’，不再受旧版管理员权限临时目录影响。\n- 点击‘检查更新’会立即显示‘正在检查…’，发现新版后直接打开新版下载窗口。\n- 保留线路预测速、断点续传、线路切换和 SHA-256 强制校验。\n- 更新不会覆盖安装根目录下的‘用户数据’。\n\n国内备用下载地址：https://gh-proxy.com/https://github.com/trumpcar/kktool/releases/download/v2.0.3/KunKunHelper_Setup.exe\n国内备用下载地址：https://ghfast.top/https://github.com/trumpcar/kktool/releases/download/v2.0.3/KunKunHelper_Setup.exe\n国内备用下载地址：https://ghproxy.net/https://github.com/trumpcar/kktool/releases/download/v2.0.3/KunKunHelper_Setup.exe\n\nSHA-256: 85809BFEBC07524E41088EB1E505D397B1AB7C7F6DF41B7F52A66F91531C8855",
-  "html_url": "https://github.com/trumpcar/kktool/releases/tag/v2.0.3",
+  "tag_name": "v2.0.4",
+  "body": "坤坤助手 v2.0.4\n\n声音识别：\n- 一个按钮通过同一个 Windows 程序回环流同时识别飞升按电脑与拉闸撤离声音。\n- 飞升按声音起点启动独立 5:30；‘检测到撤离点开启’按‘检’字起点启动独立 5:00。\n- 两类声音可以先后触发，两个倒计时允许同时显示；倒计时结束后自动进入下一轮识别。\n\n界面与操作：\n- 删除手动启动、暂停和复位拉闸 5:00 的入口。\n- 两种倒计时的字体、颜色、透明度、位置和固定状态统一放到声音识别区域下方。\n- 定向监听程序下拉框禁止鼠标滚轮切换，避免页面滚动时误选程序。\n\n模型验证：\n- 撤离点真实背景实验：96/96 带背景正样本通过，48/48 纯背景样本拒绝。\n- 飞升本地复扫：4/4 含目标声录音命中，3/3 纯背景/人声录音拒绝；增强集 96/96 正样本通过、32/32 负样本拒绝。\n- 完全离线、不上传声音、不保存监听录音、不使用 GPU。\n\n国内备用下载地址：https://gh-proxy.com/https://github.com/trumpcar/kktool/releases/download/v2.0.4/KunKunHelper_Setup.exe\n国内备用下载地址：https://ghfast.top/https://github.com/trumpcar/kktool/releases/download/v2.0.4/KunKunHelper_Setup.exe\n国内备用下载地址：https://ghproxy.net/https://github.com/trumpcar/kktool/releases/download/v2.0.4/KunKunHelper_Setup.exe\n\nSHA-256: 05D31A6765A134569F6B84EF24BA4551F87DBEDD3A4A6D863D98E1A9C5ADF387",
+  "html_url": "https://github.com/trumpcar/kktool/releases/tag/v2.0.4",
   "assets": [
     {
       "name": "KunKunHelper_Setup.exe",
-      "browser_download_url": "https://github.com/trumpcar/kktool/releases/download/v2.0.3/KunKunHelper_Setup.exe",
-      "size": 24487209
+      "browser_download_url": "https://github.com/trumpcar/kktool/releases/download/v2.0.4/KunKunHelper_Setup.exe",
+      "size": 24665484
     }
   ]
 }

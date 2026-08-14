@@ -1,14 +1,14 @@
 {
   "schema": 1,
   "repository": "trumpcar/kktool",
-  "tag_name": "v2.0.6",
-  "body": "坤坤助手 v2.0.6\n\n声音识别：\n- 保持拉闸每0.20秒精细扫描一次，避免直接把计算频率翻倍。\n- 拉闸专用历史安全窗口从0.25秒增加到0.45秒，扫描落在语音中间时会在完整语句结束后从缓冲中识别。\n- 如果启动监听时语句前半段已经播放完毕，软件不会用残缺半句冒险触发。\n- 命中后仍按‘检’字实际起点启动拉闸撤离5:00；飞升4:30模型与路径保持不变。\n\n压力验证：\n- 共执行5760组随机扫描相位、输入块位置和调度卡顿对比测试。\n- 0.45秒窗口保持0.20秒扫描，在100、150和200毫秒随机卡顿三组中均为160/160命中。\n- 起点最大绝对误差约0.125毫秒，单次拉闸扫描中位约23–24毫秒。\n- 完全离线、不上传声音、不保存监听录音、不使用GPU。\n\n国内备用下载地址：https://gh-proxy.com/https://github.com/trumpcar/kktool/releases/download/v2.0.6/KunKunHelper_Setup.exe\n国内备用下载地址：https://ghfast.top/https://github.com/trumpcar/kktool/releases/download/v2.0.6/KunKunHelper_Setup.exe\n国内备用下载地址：https://ghproxy.net/https://github.com/trumpcar/kktool/releases/download/v2.0.6/KunKunHelper_Setup.exe\n\nSHA-256: 4D7F7538C1123A13592865EE8C62712726477AC858AA1F106461D8E4701A0816",
-  "html_url": "https://github.com/trumpcar/kktool/releases/tag/v2.0.6",
+  "tag_name": "v2.0.5",
+  "body": "坤坤助手 v2.0.5\n\n拉闸识别：\n- 模板缩短为原录音1.12–1.57秒，只保留最前面的0.45秒目标语音，不再把后续机械响声学进模型。\n- 拉闸先用低成本频谱时序定位，再只在少量候选附近逐采样精细对齐并严格波形确认。\n- 拉闸真实时序阈值从0.240提高到0.300，保持每0.20秒扫描和0.45秒历史安全窗口。\n- 如果启动监听时目标前段已经播放完毕，软件不会使用残缺半句冒险触发。\n\n验证：\n- 新机械声误识别样本156种轻微变速与采样相位全部拒绝，最高0.224，低于0.300阈值。\n- 两段纯游戏背景/人物语音48/48拒绝；目标音不弱于背景的48组混合样本48/48通过。\n- 单次拉闸扫描中位约6.2毫秒；飞升模型和阈值保持不变。\n- 完全离线、不上传声音、不保存监听录音、不使用GPU。\n\n国内备用下载地址：https://gh-proxy.com/https://github.com/trumpcar/kktool/releases/download/v2.0.5/KunKunHelper_Setup.exe\n国内备用下载地址：https://ghfast.top/https://github.com/trumpcar/kktool/releases/download/v2.0.5/KunKunHelper_Setup.exe\n国内备用下载地址：https://ghproxy.net/https://github.com/trumpcar/kktool/releases/download/v2.0.5/KunKunHelper_Setup.exe\n\nSHA-256: ED131F3FE73F60B9FBE0CAFAB0A513D56B4E6A5AE05E571CA1C24AEECD3D92DE",
+  "html_url": "https://github.com/trumpcar/kktool/releases/tag/v2.0.5",
   "assets": [
     {
       "name": "KunKunHelper_Setup.exe",
-      "browser_download_url": "https://github.com/trumpcar/kktool/releases/download/v2.0.6/KunKunHelper_Setup.exe",
-      "size": 24681996
+      "browser_download_url": "https://github.com/trumpcar/kktool/releases/download/v2.0.5/KunKunHelper_Setup.exe",
+      "size": 24556612
     }
   ]
 }

@@ -2,13 +2,13 @@
   "schema": 1,
   "repository": "trumpcar/kktool",
   "tag_name": "v2.0.6",
-  "body": "坤坤助手 v2.0.6\n\n倒计时补偿：\n- 拉闸倒计时在目标语音起点基础上额外提前1.0秒。\n- 剩余时间按‘5:00－（当前时间－目标语音起点）－1.0秒’计算，已包含0.45秒目标片段、0.20秒扫描、计算和界面刷新延迟。\n- 飞升4:30仍按机械声音实际起点计算，不增加拉闸专用补偿。\n\n结束残音冷却：\n- 飞升倒计时结束后，飞升声音等待3秒再重新加入识别。\n- 拉闸倒计时结束后，拉闸声音等待3秒再重新加入识别。\n- 两类冷却相互独立，不影响另一种声音继续监听。\n\n拉闸模型：\n- 保持原录音1.12–1.57秒的前0.45秒语音模板和0.300时序阈值。\n- 后续机械响声不进入模型，保持0.20秒扫描和0.45秒历史安全窗口。\n- 完全离线、不上传声音、不保存监听录音、不使用GPU。\n\n国内备用下载地址：https://gh-proxy.com/https://github.com/trumpcar/kktool/releases/download/v2.0.6/KunKunHelper_Setup.exe\n国内备用下载地址：https://ghfast.top/https://github.com/trumpcar/kktool/releases/download/v2.0.6/KunKunHelper_Setup.exe\n国内备用下载地址：https://ghproxy.net/https://github.com/trumpcar/kktool/releases/download/v2.0.6/KunKunHelper_Setup.exe\n\nSHA-256: EC9535B354BD6DFD66516EFDB99BEA4A773A812F4F9B02F9CD688062C94686A4",
+  "body": "坤坤助手 v2.0.6\n\n识别延迟与显示：\n- 拉闸和飞升均按‘总时长－（当前时间－声音起点）’动态扣除每次真实识别延迟，不使用固定1秒补偿。\n- 延迟自动包含目标片段、扫描等待、模型计算和界面刷新时间。\n- 声音联动倒计时按完整剩余秒数向下显示，剩余299.413秒显示04:59。\n- 严格程序回环保留后端返回的完整音频块，不再截断到1024帧，避免丢音和漏算缓冲时间。\n\n结束残音冷却：\n- 飞升倒计时结束后，飞升声音等待3秒再重新加入识别。\n- 拉闸倒计时结束后，拉闸声音等待3秒再重新加入识别。\n- 两类冷却相互独立，不影响另一种声音继续监听。\n\n拉闸模型：\n- 保持原录音1.12–1.57秒的前0.45秒语音模板和0.300时序阈值。\n- 后续机械响声不进入模型，保持0.20秒扫描和0.45秒历史安全窗口。\n- 完全离线、不上传声音、不保存监听录音、不使用GPU。\n\n国内备用下载地址：https://gh-proxy.com/https://github.com/trumpcar/kktool/releases/download/v2.0.6/KunKunHelper_Setup.exe\n国内备用下载地址：https://ghfast.top/https://github.com/trumpcar/kktool/releases/download/v2.0.6/KunKunHelper_Setup.exe\n国内备用下载地址：https://ghproxy.net/https://github.com/trumpcar/kktool/releases/download/v2.0.6/KunKunHelper_Setup.exe\n\nSHA-256: 155AF42A44C262C7EF1A08CCAE930CF5EE719FBA435E4E866579EAC138DA8EE7",
   "html_url": "https://github.com/trumpcar/kktool/releases/tag/v2.0.6",
   "assets": [
     {
       "name": "KunKunHelper_Setup.exe",
       "browser_download_url": "https://github.com/trumpcar/kktool/releases/download/v2.0.6/KunKunHelper_Setup.exe",
-      "size": 24561694
+      "size": 24561021
     }
   ]
 }

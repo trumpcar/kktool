@@ -2,13 +2,99 @@
   "schema": 1,
   "repository": "trumpcar/kktool",
   "tag_name": "v2.0.7",
-  "body": "坤坤助手 v2.0.7\n\n窗口关闭修复：\n- 从 Windows 任务栏右键选择‘关闭窗口’时，会正常显示‘放入后台 / 彻底退出程序 / 取消’。\n- 主窗口最小化时会先恢复，确认框会显式映射并限制在当前屏幕工作区内。\n- 连续关闭请求只显示一个确认框，标题栏和托盘关闭行为保持不变。\n\n声音识别：\n- 安装包带入当前完整短语与 KWS 临界复核模型。\n- KWS 不能单独启动倒计时，识别完全离线、不上传声音、不使用 GPU。\n\n更新与数据：\n- 更新只替换安装目录中的 app 组件，不覆盖安装根目录下的‘用户数据’。\n- 主程序和声音识别以普通权限运行，仅显卡修改辅助程序请求管理员权限。\n- 当前安装程序尚未数字签名，Windows SmartScreen 可能显示提示。\n\n国内备用下载地址：https://gh-proxy.com/https://github.com/trumpcar/kktool/releases/download/v2.0.7/KunKunHelper_Setup.exe\n国内备用下载地址：https://ghfast.top/https://github.com/trumpcar/kktool/releases/download/v2.0.7/KunKunHelper_Setup.exe\n国内备用下载地址：https://ghproxy.net/https://github.com/trumpcar/kktool/releases/download/v2.0.7/KunKunHelper_Setup.exe\n\nSHA-256: 57559E67B46FDE0911E78161E5C7C69DFDBD25CB5A225077F97E0C48BC2931BC",
+  "body": "坤坤助手 v2.0.7\n\n2.0.7 修订版（2026-09-30），替换此前同版本安装包。\n\n版本选择与提示：\n- 设置 → 关于 → 检查更新可列出多个正式版本，支持选择旧版本或重装当前版本。\n- 可取消“启动时自动检查并提示更新”，关闭后仍可手动检查。\n- 回退版本前请先备份用户数据，旧版本可能不支持新设置。\n- 已经安装旧 2.0.7 的用户请下载本修订版覆盖安装；相同版本号不会触发旧客户端的新版本提示。\n\n分辨率与 FOV：\n- 区分游戏渲染比例和屏幕显示比例，拉伸模式默认以显示器原生比例作为 FOV 参考。\n- 修复 16:9 显示器使用 4:3 等非原生分辨率拉伸时的标点换算，保留手动参考比例及显示方式选择。\n\n窗口关闭修复：\n- 从Windows任务栏右键选择“关闭窗口”时，会正常显示“放入后台 / 彻底退出程序 / 取消”。\n- 主窗口已经最小化时，关闭请求会先恢复并激活主窗口，再显示关闭选项。\n- 关闭选项会限制在当前屏幕工作区内，不再跟随最小化窗口坐标隐藏到屏幕外。\n- 连续触发关闭请求时只显示一个关闭选项窗口。\n- 标题栏关闭按钮和系统托盘关闭程序的原有行为保持不变。\n\n声音识别：\n- 实时拉闸识别恢复 2.0.6 配置，停用此前 2.0.7 的完整短语/KWS 识别路径。\n- 飞升 4:30、拉闸撤离 5:00 独立显示，按估计声音起点补偿识别延迟；同类结束后等待 3 秒恢复检测。\n- 识别仍完全离线、不上传声音、不使用GPU；仍可能误报或漏报，游戏实际效果需要继续验证。\n\n更新与数据：\n- 更新只替换安装目录中的app程序组件，不覆盖安装根目录下的“用户数据”。\n- 主程序和声音识别继续以普通权限运行；仅修改显卡名称时启动管理员组件。\n- 当前安装程序尚未数字签名，Windows SmartScreen可能显示提示。\n\n国内备用下载地址：https://gh-proxy.com/https://github.com/trumpcar/kktool/releases/download/v2.0.7/KunKunHelper_Setup.exe\n国内备用下载地址：https://ghfast.top/https://github.com/trumpcar/kktool/releases/download/v2.0.7/KunKunHelper_Setup.exe\n国内备用下载地址：https://ghproxy.net/https://github.com/trumpcar/kktool/releases/download/v2.0.7/KunKunHelper_Setup.exe\n\nSHA-256: 52BC3C8F0DE79C7208ACB328221BFAB9C1EFF16EA4B6C583E01706C44596E3B5",
   "html_url": "https://github.com/trumpcar/kktool/releases/tag/v2.0.7",
   "assets": [
     {
       "name": "KunKunHelper_Setup.exe",
       "browser_download_url": "https://github.com/trumpcar/kktool/releases/download/v2.0.7/KunKunHelper_Setup.exe",
-      "size": 55309649
+      "size": 55653790
+    }
+  ],
+  "releases": [
+    {
+      "tag_name": "v2.0.7",
+      "body": "坤坤助手 v2.0.7\n\n2.0.7 修订版（2026-09-30），替换此前同版本安装包。\n\n版本选择与提示：\n- 设置 → 关于 → 检查更新可列出多个正式版本，支持选择旧版本或重装当前版本。\n- 可取消“启动时自动检查并提示更新”，关闭后仍可手动检查。\n- 回退版本前请先备份用户数据，旧版本可能不支持新设置。\n- 已经安装旧 2.0.7 的用户请下载本修订版覆盖安装；相同版本号不会触发旧客户端的新版本提示。\n\n分辨率与 FOV：\n- 区分游戏渲染比例和屏幕显示比例，拉伸模式默认以显示器原生比例作为 FOV 参考。\n- 修复 16:9 显示器使用 4:3 等非原生分辨率拉伸时的标点换算，保留手动参考比例及显示方式选择。\n\n窗口关闭修复：\n- 从Windows任务栏右键选择“关闭窗口”时，会正常显示“放入后台 / 彻底退出程序 / 取消”。\n- 主窗口已经最小化时，关闭请求会先恢复并激活主窗口，再显示关闭选项。\n- 关闭选项会限制在当前屏幕工作区内，不再跟随最小化窗口坐标隐藏到屏幕外。\n- 连续触发关闭请求时只显示一个关闭选项窗口。\n- 标题栏关闭按钮和系统托盘关闭程序的原有行为保持不变。\n\n声音识别：\n- 实时拉闸识别恢复 2.0.6 配置，停用此前 2.0.7 的完整短语/KWS 识别路径。\n- 飞升 4:30、拉闸撤离 5:00 独立显示，按估计声音起点补偿识别延迟；同类结束后等待 3 秒恢复检测。\n- 识别仍完全离线、不上传声音、不使用GPU；仍可能误报或漏报，游戏实际效果需要继续验证。\n\n更新与数据：\n- 更新只替换安装目录中的app程序组件，不覆盖安装根目录下的“用户数据”。\n- 主程序和声音识别继续以普通权限运行；仅修改显卡名称时启动管理员组件。\n- 当前安装程序尚未数字签名，Windows SmartScreen可能显示提示。\n\n国内备用下载地址：https://gh-proxy.com/https://github.com/trumpcar/kktool/releases/download/v2.0.7/KunKunHelper_Setup.exe\n国内备用下载地址：https://ghfast.top/https://github.com/trumpcar/kktool/releases/download/v2.0.7/KunKunHelper_Setup.exe\n国内备用下载地址：https://ghproxy.net/https://github.com/trumpcar/kktool/releases/download/v2.0.7/KunKunHelper_Setup.exe\n\nSHA-256: 52BC3C8F0DE79C7208ACB328221BFAB9C1EFF16EA4B6C583E01706C44596E3B5",
+      "html_url": "https://github.com/trumpcar/kktool/releases/tag/v2.0.7",
+      "assets": [
+        {
+          "name": "KunKunHelper_Setup.exe",
+          "browser_download_url": "https://github.com/trumpcar/kktool/releases/download/v2.0.7/KunKunHelper_Setup.exe",
+          "size": 55653790
+        }
+      ]
+    },
+    {
+      "tag_name": "v2.0.6",
+      "body": "坤坤助手 v2.0.6\n\n本次更新按每次声音的真实起点动态扣除识别延迟，并阻止倒计时结束残音立即重复触发同一种声音。\n\n识别延迟与显示：\n- 拉闸和飞升均保留目标声音实际起点，剩余时间按“总时长－（当前时间－声音起点）”计算。\n- 每次实际扣除的延迟自动包含目标片段、扫描等待、模型计算和界面刷新时间，不使用固定1秒补偿。\n- 声音联动倒计时按完整剩余秒数向下显示；例如剩余299.413秒会显示04:59，不再因向上取整看起来慢一秒。\n- 界面显示本次识别延迟，便于核对声音起点和首次倒计时读数。\n- 严格程序回环保留后端一次返回的完整音频块，不再只保留前1024帧，避免丢失音频及漏算缓冲时间。\n\n结束残音冷却：\n- 飞升倒计时归零收回后，飞升声音等待3秒再重新加入识别。\n- 拉闸倒计时归零收回后，拉闸声音等待3秒再重新加入识别。\n- 两类冷却相互独立；飞升冷却时仍可识别拉闸，拉闸冷却时仍可识别飞升。\n- 3秒从倒计时实际结束时开始，只隔离下一轮同类识别，不影响当前倒计时和另一类声音。\n\n拉闸模型：\n- 继续使用原录音1.12–1.57秒的前0.45秒语音模板和0.300时序阈值。\n- 后续机械响声不进入模型；机械声硬负样本回归继续拒绝。\n- 保持0.20秒扫描和0.45秒历史安全窗口。\n\n更新与权限：\n- 完全离线、不上传声音、不保存监听录音、不使用GPU。\n- 主程序与声音识别继续以普通权限运行；仅修改显卡名称时启动独立管理员组件。\n- 更新不会覆盖安装根目录下的“用户数据”。\n- 当前安装程序尚未数字签名，Windows SmartScreen可能显示提示。\n\n国内备用下载地址：https://gh-proxy.com/https://github.com/trumpcar/kktool/releases/download/v2.0.6/KunKunHelper_Setup.exe\n国内备用下载地址：https://ghfast.top/https://github.com/trumpcar/kktool/releases/download/v2.0.6/KunKunHelper_Setup.exe\n国内备用下载地址：https://ghproxy.net/https://github.com/trumpcar/kktool/releases/download/v2.0.6/KunKunHelper_Setup.exe\n\nSHA-256: 155AF42A44C262C7EF1A08CCAE930CF5EE719FBA435E4E866579EAC138DA8EE7\n",
+      "html_url": "https://github.com/trumpcar/kktool/releases/tag/v2.0.6",
+      "assets": [
+        {
+          "name": "KunKunHelper_Setup.exe",
+          "browser_download_url": "https://github.com/trumpcar/kktool/releases/download/v2.0.6/KunKunHelper_Setup.exe",
+          "size": 24561021
+        }
+      ]
+    },
+    {
+      "tag_name": "v2.0.5",
+      "body": "坤坤助手 v2.0.5\n\n本次覆盖更新重新裁剪拉闸撤离语音模型，去除会造成误识别的后续机械响声。\n\n拉闸识别：\n- 模板由原录音1.12–2.86秒缩短为1.12–1.57秒，只保留最前面的0.45秒目标语音。\n- 拉闸长语音与飞升短机械声使用独立实时候选定位方式。\n- 先用低成本频谱时序定位，再只在少量候选附近逐采样精细对齐并严格波形确认。\n- 拉闸真实时序阈值从0.240提高到0.300，降低机械声误触发概率。\n- 保持每0.20秒扫描一次，并保留0.45秒拉闸历史安全窗口；扫描落在目标前段中间时，会在该前段完整结束后从缓冲中识别。\n- 如果启动监听时目标前段已经播放完毕，软件不会使用残缺半句冒险触发。\n- 命中后仍按目标前段实际起点启动拉闸撤离5:00，不把扫描和计算延迟计入倒计时。\n\n验证：\n- 新机械声误识别样本的156种轻微变速与采样相位全部拒绝，最高0.224，低于0.300阈值。\n- 两段纯游戏背景/人物语音负样本48/48拒绝。\n- 目标音不弱于背景的48组混合样本48/48通过。\n- 单次拉闸扫描中位耗时约6.2毫秒，较旧1.74秒模板明显降低。\n- 飞升4:30模型和0.300时序阈值保持不变。\n\n界面与权限：\n- 飞升与拉闸分别显示实时分数及各自真实时序阈值。\n- 完全离线、不上传声音、不保存监听录音、不使用GPU。\n- 主程序与声音识别继续以普通权限运行；仅修改显卡名称时启动独立管理员组件。\n- 更新不会覆盖安装根目录下的“用户数据”。\n- 当前安装程序尚未数字签名，Windows SmartScreen可能显示提示。\n\n国内备用下载地址：https://gh-proxy.com/https://github.com/trumpcar/kktool/releases/download/v2.0.5/KunKunHelper_Setup.exe\n国内备用下载地址：https://ghfast.top/https://github.com/trumpcar/kktool/releases/download/v2.0.5/KunKunHelper_Setup.exe\n国内备用下载地址：https://ghproxy.net/https://github.com/trumpcar/kktool/releases/download/v2.0.5/KunKunHelper_Setup.exe\n\nSHA-256: ED131F3FE73F60B9FBE0CAFAB0A513D56B4E6A5AE05E571CA1C24AEECD3D92DE\n",
+      "html_url": "https://github.com/trumpcar/kktool/releases/tag/v2.0.5",
+      "assets": [
+        {
+          "name": "KunKunHelper_Setup.exe",
+          "browser_download_url": "https://github.com/trumpcar/kktool/releases/download/v2.0.5/KunKunHelper_Setup.exe",
+          "size": 24556612
+        }
+      ]
+    },
+    {
+      "tag_name": "v2.0.4",
+      "body": "坤坤助手 v2.0.4\n\n本次更新将飞升按电脑与拉闸撤离声音识别合并为一个低资源监听流程。\n\n声音识别：\n- 一个“开始声音识别（飞升 / 拉闸）”按钮，通过同一个 Windows 程序回环流同时识别两类声音，不会打开两份游戏音频。\n- 飞升按电脑首次命中后，按该声音起始北京时间启动独立 4:30 倒计时。\n- “检测到撤离点开启”命中后，按“检”字起始北京时间启动独立拉闸撤离 5:00 倒计时。\n- 识别完成时会自动扣除语句长度与计算延迟，因此倒计时首次显示会小于完整时长。\n- 两类声音可以先后触发，两个悬浮倒计时允许同时显示；某一类命中后只停止该类计算，继续等待另一类。\n- 任一倒计时结束后自动收回，并根据仍在运行的倒计时重新进入下一轮识别，不需要手动再次开启。\n\n界面与操作：\n- 删除手动启动、暂停和复位拉闸 5:00 的入口，声音联动倒计时不能手动改写计时基准。\n- 两种倒计时的字体、颜色、透明度、位置和固定状态统一放到声音识别区域下方，仍各自独立保存。\n- 定向监听程序下拉框禁止鼠标滚轮切换，页面上下滚动时不会误选其他程序。\n\n模型与验证：\n- 撤离点模板最终裁剪为原录音 1.12–2.86 秒，只保留“检测到撤离点开启”，并加入轻微变速和真实游戏背景增强。\n- 撤离点真实背景实验：96/96 带背景正样本通过，48/48 纯背景样本拒绝。\n- 飞升模型本地复扫：4/4 含目标声录音命中，3/3 纯背景/人声录音拒绝。\n- 飞升增强集：96/96 带背景正样本通过，32/32 纯背景样本拒绝。\n- 两类识别完全离线、不上传声音、不保存监听录音、不使用 GPU。\n\n更新与权限：\n- 主程序与声音识别继续以普通权限运行；仅修改显卡名称时启动独立管理员组件。\n- 更新缓存继续保存在“用户数据\\更新缓存”，不会覆盖用户数据。\n- 保留下载线路预测速、断点续传、线路切换和 SHA-256 强制校验。\n- 当前安装程序尚未数字签名，Windows SmartScreen 可能显示提示。\n\n国内备用下载地址：https://gh-proxy.com/https://github.com/trumpcar/kktool/releases/download/v2.0.4/KunKunHelper_Setup.exe\n国内备用下载地址：https://ghfast.top/https://github.com/trumpcar/kktool/releases/download/v2.0.4/KunKunHelper_Setup.exe\n国内备用下载地址：https://ghproxy.net/https://github.com/trumpcar/kktool/releases/download/v2.0.4/KunKunHelper_Setup.exe\n\nSHA-256: 5EDE19F4BA2EC94D4A48A822821EACC96CD730A3CDE7BB7809400C96322CE32C\n",
+      "html_url": "https://github.com/trumpcar/kktool/releases/tag/v2.0.4",
+      "assets": [
+        {
+          "name": "KunKunHelper_Setup.exe",
+          "browser_download_url": "https://github.com/trumpcar/kktool/releases/download/v2.0.4/KunKunHelper_Setup.exe",
+          "size": 24664966
+        }
+      ]
+    },
+    {
+      "tag_name": "v2.0.3",
+      "body": "坤坤助手 v2.0.3\n\n本次更新重点降低音频识别与游戏进程之间的直接交互，并细化管理员权限边界。\n\n权限调整：\n- 主程序、倒计时和音频识别改为普通用户权限运行，启动软件不再请求 UAC。\n- 新增独立的“坤坤助手_显卡管理员.exe”，仅在用户确认修改或恢复 NVIDIA 显卡名称时请求一次管理员权限。\n- 显卡管理员组件只执行所选设备的注册表写入与回读验证，不创建主窗口、不监听声音、不参与倒计时。\n\n音频识别：\n- 继续通过 Windows 进程回环接口严格监听所选 PID 及其子进程，不会退回系统混音。\n- 音频模块不再通过 OpenProcess 打开目标游戏进程，只把 PID 交给 Windows 音频系统。\n- 程序列表改用音频会话提供的 EXE、PID 和窗口标题，不再读取目标程序完整路径。\n- 两次确认、以第一次声音为基准启动 5:30 倒计时及确认后停止监听的逻辑保持不变。\n\n更新说明：\n- 修正 Nuitka 正式包被误判为“源码运行模式”的问题，安装版可以正常下载并安装更新。\n- “关于”页删除重复的下方版本更新面板，保留顶部“检查更新”、更新记录和独立更新窗口。\n- 更新缓存改存到当前“用户数据\\更新缓存”，不再受旧版管理员权限临时目录影响；权限不足和磁盘空间不足会分别提示。\n- 点击“检查更新”会立即显示“正在检查…”，发现新版后直接打开新版下载窗口。\n- 2.0.2 会在启动时自动检查一次新版本，也可在“设置 → 关于”中手动检查。\n- 手动运行安装器时允许选择安装目录；软件内自动更新继续沿用原安装位置。\n- 更新会整体替换 app 程序组件，不覆盖安装根目录下的“用户数据”。\n- 继续保留下载线路预测速、断点续传、线路切换和 SHA-256 强制校验。\n- 当前安装程序尚未数字签名，Windows SmartScreen 可能显示提示。\n\n国内备用下载地址：https://gh-proxy.com/https://github.com/trumpcar/kktool/releases/download/v2.0.3/KunKunHelper_Setup.exe\n国内备用下载地址：https://ghfast.top/https://github.com/trumpcar/kktool/releases/download/v2.0.3/KunKunHelper_Setup.exe\n国内备用下载地址：https://ghproxy.net/https://github.com/trumpcar/kktool/releases/download/v2.0.3/KunKunHelper_Setup.exe\n\nSHA-256: 85809BFEBC07524E41088EB1E505D397B1AB7C7F6DF41B7F52A66F91531C8855\n",
+      "html_url": "https://github.com/trumpcar/kktool/releases/tag/v2.0.3",
+      "assets": [
+        {
+          "name": "KunKunHelper_Setup.exe",
+          "browser_download_url": "https://github.com/trumpcar/kktool/releases/download/v2.0.3/KunKunHelper_Setup.exe",
+          "size": 24487209
+        }
+      ]
+    },
+    {
+      "tag_name": "v2.0.2",
+      "body": "坤坤助手 v2.0.2（修正版安装包）\n\n此安装包用于替换早期发布的错误 2.0.2 文件，并作为自动更新功能的修复起点。\n\n修复内容：\n- 修正 Nuitka 正式包被误判为“源码运行模式”的问题；安装版现在可以下载并安装新版本。\n- 主程序、倒计时和音频识别以普通用户权限运行；仅修改或恢复 NVIDIA 显卡名称时启动独立管理员组件。\n- 音频识别继续严格监听所选 PID 及其子进程，但不再通过 OpenProcess 打开目标游戏进程。\n- “关于”页删除重复的下方版本更新面板，保留顶部“检查更新”和独立更新窗口。\n- 更新缓存改存到当前“用户数据\\更新缓存”，不再受旧版管理员权限临时目录影响。\n- 点击“检查更新”会立即显示“正在检查…”，发现新版后直接打开新版下载窗口。\n- 手动运行安装器时允许选择安装目录；软件内自动更新沿用原安装位置。\n- 更新不会覆盖安装根目录下的“用户数据”。\n\n重要说明：\n- 已安装早期错误 2.0.2 的用户，需要手动运行一次本修正版安装程序。\n- 安装修正版 2.0.2 后，重新启动软件即可自动检查并更新到当前最新版。\n- 当前安装程序尚未数字签名，Windows SmartScreen 可能显示提示。\n\n国内备用下载地址：https://gh-proxy.com/https://github.com/trumpcar/kktool/releases/download/v2.0.2/KunKunHelper_Setup.exe\n国内备用下载地址：https://ghfast.top/https://github.com/trumpcar/kktool/releases/download/v2.0.2/KunKunHelper_Setup.exe\n国内备用下载地址：https://ghproxy.net/https://github.com/trumpcar/kktool/releases/download/v2.0.2/KunKunHelper_Setup.exe\n\nSHA-256: DB0B6364635612297E02F3C4C242D6D51697DBA56E5EC6E8821DB5EAAFDC4608\n",
+      "html_url": "https://github.com/trumpcar/kktool/releases/tag/v2.0.2",
+      "assets": [
+        {
+          "name": "KunKunHelper_Setup.exe",
+          "browser_download_url": "https://github.com/trumpcar/kktool/releases/download/v2.0.2/KunKunHelper_Setup.exe",
+          "size": 24487568
+        }
+      ]
+    },
+    {
+      "tag_name": "v2.0.1",
+      "body": "坤坤助手 v2.0.1\n\n本次更新以软件安装、升级和界面整理为主，并加入飞升按电脑声音识别功能。\n\n软件改动：\n\n- 改为正式安装版结构：运行组件统一放在 app 文件夹，用户数据独立保存在安装目录下的“用户数据”文件夹。\n- 支持 Windows“已安装的应用”和开始菜单卸载；普通卸载默认保留用户数据。\n- 2.0.1 作为后续安装器更新的起点。以后软件会下载新版安装程序、校验 SHA-256，并使用原安装位置覆盖升级。\n- 更新下载前会并行小流量测试 GitHub 官方源和可用备用线路，优先选择当前最快线路；下载中断仍支持断点续传和线路切换。\n- 升级时整体替换 app 程序组件，清理已知旧版运行文件，不覆盖“用户数据”。\n- FOV 换算的竖直角度新用户默认改为 24°，并增加“88 米瞬爆角度”的使用提示。\n- 新标点默认大小改为 10；新用户首次打开时标点列表为空。\n- “两种倒计时共用的悬浮显示”移动到飞升按电脑识别区域下方。\n- 修正版不再使用旧版管理员权限创建的系统临时缓存，更新文件改存到当前“用户数据\\更新缓存”。\n- 点击“检查更新”会立即显示检查状态；发现新版后直接打开新版下载窗口。\n\n飞升按电脑识别说明：\n\n- 在倒计时页面选择游戏程序后开始实时识别，只读取所选程序及其子进程的声音。\n- 识别在本机离线完成，不上传声音，也不会保存诊断录音。\n- 6 秒内确认两次目标声音后，以第一次识别到的北京时间为基准启动 5:30 倒计时，并自动停止监听。\n- 第二次确认产生的等待时间会从倒计时中扣除，因此识别完成时屏幕数字可能已经小于 05:30。\n- 可事先预览并放置悬浮倒计时；识别完成后会使用已经设置好的位置、颜色、字体和透明度。\n\n从旧版升级：\n\n- 1.1.2 用户需要手动运行一次 2.0.1 安装程序，之后即可使用新的安装器更新方式。\n- 首次启动 2.0.1 时，如果安装目录下的“用户数据”为空，会校验迁移旧版 LocalAppData 或旧版自定义位置中的数据。\n- 已有标点和用户设置会保留；竖直角度 24、默认大小 10 和空标点列表只作为新用户默认值。\n\nGitHub 更新资产：KunKunHelper_Setup.exe\n本地安装包名称：坤坤助手_安装程序.exe\n\n国内备用下载地址：https://gh-proxy.com/https://github.com/trumpcar/kktool/releases/download/v2.0.1/KunKunHelper_Setup.exe\n国内备用下载地址：https://ghfast.top/https://github.com/trumpcar/kktool/releases/download/v2.0.1/KunKunHelper_Setup.exe\n国内备用下载地址：https://ghproxy.net/https://github.com/trumpcar/kktool/releases/download/v2.0.1/KunKunHelper_Setup.exe\n\nSHA-256：58C7A1A872AC99F21F9DE74491650E40DC08B7F0166A09AF736738E2B9DAF44D\n\n当前安装程序尚未数字签名，Windows SmartScreen 可能显示提示。\n",
+      "html_url": "https://github.com/trumpcar/kktool/releases/tag/v2.0.1",
+      "assets": [
+        {
+          "name": "KunKunHelper_Setup.exe",
+          "browser_download_url": "https://github.com/trumpcar/kktool/releases/download/v2.0.1/KunKunHelper_Setup.exe",
+          "size": 24480248
+        }
+      ]
     }
   ]
 }
